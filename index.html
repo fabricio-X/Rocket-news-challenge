@@ -7,34 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Work+Sans:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon">
     <title>RocketNews</title>
 </head>
 
 <body>
     <div class="container">
+        <div class="bg-image"></div>
+
         <div class="main">
             <header class="main-header">
-                <img src="assets/logo.svg" alt="" class="logo">
+                <a href="/"><img src="assets/logo.svg" alt="Logo dá página" class="main-logo"></a>
             </header>
 
             <main class="content">
-                <section class="text">
-                    <h1 class="title">Atualize ideias e informações em 5 minutos.</h1>
-                    <h2 class="sub">tudo que você precisa saber para começar seu dia bem e informado</h2>
-                    <p class="description">noticias sobre o universo Rocketseat, e tudo o que precisa para começar o dia melhor.
+                <section class="main-text">
+                    <h1 class="main-title">Atualize ideias e informações em 5 minutos.</h1>
+                    <h2 class="main-sub">tudo que você precisa saber para começar seu dia bem e informado</h2>
+                    <p class="main-description">noticias sobre o universo Rocketseat, e tudo o que precisa para começar o dia melhor.
                     perfeito para se preparar para codar &#x2615;</p>
                 </section>
 
                 <section class="forms">
-                    <form action="#" class="email-form">
+                    <form action="" class="email-form">
                         <label for="" class="email-label">Insira seu e-mail:</label>
                         <div class="input-btn-flex">
-                            <input type="email" name="email" id="email-input" placeholder="oi@rocketseat.com">
-                            <button type="submit" form="email-form"></button>
+                            <input type="email" name="email" id="email-input" placeholder="oi@rocketseat.com" autocomplete="off">
+                            <button type="submit" form="email-form" aria-label="Enviar e cadastrar email"></button>
                         </div>
                     </form>
                     
@@ -44,8 +45,6 @@
                 </section>
             </main>
         </div>
-
-        <div class="bg-image"></div>
     </div>
 </body>
 
