@@ -14,3 +14,4 @@ Este projeto é minha resolução do desafio [RocketNews](https://efficient-slot
 - Position
 - Backgrounds
 - Floats
+- Animações

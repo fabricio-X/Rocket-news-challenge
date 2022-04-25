@@ -15,7 +15,7 @@ a {
     --text-color: #E1E1E6;
     --title-color: #04D361;
     --form-color: #A8A8A8;
-    --bg-button-color: #8257e5;
+    --bg-button-color: #8257E5;
 }
 
 body {
@@ -24,8 +24,7 @@ body {
 
 .container { /* divide conteudo principal e imagem de fundo */
     display: flex;
-    /* para que a bg-image não fique à esquerda, pois ela vem primeiro no HTML */
-    flex-direction: row-reverse;
+    flex-direction: row-reverse; /* para que bg-image não fique à esquerda, já que ela vem primeiro no HTML */
     gap: 0;
 }
 
@@ -151,21 +150,21 @@ body {
     padding: 0.2rem;
 }
 
-.read-more a { /* espaço entre o texto e a seta */
+.read-more a { /* espaço entre o texto e a seta */ 
     color: var(--bg-button-color);
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 0.1875rem;
+    transition: gap 140ms; /* anim. da seta */
+}
+
+.read-more a:hover {
+    gap: 1rem;
 }
 
 .read-more a:visited {
     color: inherit;
-}
-
-.read-more a:hover {
-    text-decoration: underline;
-    text-underline-offset: 0.125rem;
 }
 
 .arrow-right {
@@ -177,11 +176,10 @@ body {
     background-size: 1.5rem;
 }
 
-.bg-image {
-    /* imagem de fundo principal */
+.bg-image { /* imagem de fundo do body */
     width: 50vw;
     height: 100vh;
-    background-image: url('assets/read_news.jpg');
+    background-image: url('assets/read_news-new.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: -15.625rem;
